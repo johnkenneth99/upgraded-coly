@@ -12,6 +12,14 @@ $m::{
     }
 }
 
+$^m::{
+    if GetKeyState("CapsLock", "T") {
+        Send "^{Left}"
+    } else {
+        Send "^m"
+    }
+}
+
 $n::{
     if GetKeyState("CapsLock", "T") {
         Send "{Down}"
@@ -36,6 +44,14 @@ $i::{
     }
 }
 
+$^i::{
+  if GetKeyState("CapsLock", "T") {
+        Send "^{Right}"
+    }else{
+        Send "^i"
+    }
+}
+
 $p::{
     if GetKeyState("CapsLock", "T") {
         Send "-"
@@ -43,7 +59,6 @@ $p::{
         Send "p"
     }
 }
-
 
 +$p::{
     if GetKeyState("CapsLock", "T") {
@@ -156,4 +171,3 @@ $o::{
         Send "o"
     }
 }
-
