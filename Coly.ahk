@@ -6,33 +6,17 @@ $Capslock:: Send "{Backspace}"
 
 $m::{
     if GetKeyState("CapsLock", "T") {
-        Send "{Left}"
+        Send "="
     } else {
         Send "m"
     }
 }
 
-$n::{
++$m::{
     if GetKeyState("CapsLock", "T") {
-        Send "{Down}"
+        Send "{!}"
     } else {
-        Send "n"
-    }
-}
-
-$e::{
-    if GetKeyState("CapsLock", "T") {
-        Send "{Up}"
-    } else {
-        Send "e"
-    }
-}
-
-$i::{
-    if GetKeyState("CapsLock", "T") {
-        Send "{Right}"
-    } else {
-        Send "i"
+        Send "M"
     }
 }
 
@@ -44,20 +28,11 @@ $p::{
     }
 }
 
-
 +$p::{
     if GetKeyState("CapsLock", "T") {
         Send "_"
     } else {
         Send "P"
-    }
-}
-
-$d::{
-    if GetKeyState("CapsLock", "T") {
-        Send "$"
-    } else {
-        Send "d"
     }
 }
 
@@ -90,14 +65,6 @@ $u::{
         Send ")"
     } else {
         Send "U"
-    }
-}
-
-$h::{
-    if GetKeyState("CapsLock", "T") {
-        Send "="
-    } else {
-        Send "h"
     }
 }
 
@@ -157,3 +124,82 @@ $o::{
     }
 }
 
+$h::{
+    if GetKeyState("CapsLock", "T") {
+        Send "1"
+    } else {
+        Send "h"
+    }
+}
+
+$,::{
+    if GetKeyState("CapsLock", "T") {
+        Send "2"
+    } else {
+        Send ","
+    }
+}
+
+$.::{
+    if GetKeyState("CapsLock", "T") {
+        Send "3"
+    } else {
+        Send "."
+    }
+}
+
+$n::{
+    if GetKeyState("CapsLock", "T") {
+        Send "4"
+    } else {
+        Send "n"
+    }
+}
+
+$e::{
+    if GetKeyState("CapsLock", "T") {
+        Send "5"
+    } else {
+        Send "e"
+    }
+}
+
+$i::{
+    if GetKeyState("CapsLock", "T") {
+        Send "6"
+    } else {
+        Send "i"
+    }
+}
+
+$x::{
+    if GetKeyState("CapsLock", "T") {
+        Send "7"
+    } else {
+        Send "x"
+    }
+}
+
+$c::{
+    if GetKeyState("CapsLock", "T") {
+        Send "8"
+    } else {
+        Send "c"
+    }
+}
+
+$d::{
+    if GetKeyState("CapsLock", "T") {
+        Send "9"
+    } else {
+        Send "d"
+    }
+}
+
+$v::{
+    if GetKeyState("CapsLock", "T") {
+        Send "$"
+    } else {
+        Send "v"
+    }
+}
